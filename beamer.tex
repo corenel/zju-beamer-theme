@@ -1,0 +1,120 @@
+% 设置为 Beamer 文档类型，设置字体为 10pt，长宽比为16:9，数学字体为 serif 风格
+\documentclass[10pt,aspectratio=169,mathserif]{ctexbeamer}
+
+%%%%-----导入宏包-----%%%%
+\usepackage{style/zjubeamer}
+\usepackage{xeCJK}
+\usepackage{amsmath,amsfonts,amssymb,bm}
+\usepackage{color}
+\usepackage{graphicx,hyperref,url}
+\usepackage{comment}
+%%%%%%%%%%%%%%%%%%
+
+%%%%-----设置字体-----%%%%
+\setsansfont{Helvetica}
+%\setsansfont{Times New Roman}
+
+% 设置 Beamer 主题
+\beamertemplateballitem
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{\textbf{目录}}
+    \textbf{\tableofcontents[currentsection]}
+  \end{frame}
+}
+
+%%%%----首页信息设置----%%%%
+\AtBeginDocument{%
+\title[基于自监督学习的摸鱼神经网络]{\fontsize{13pt}{18pt}\selectfont {基于自监督学习的摸鱼神经网络}}
+%%%%----标题设置
+\subtitle{\fontsize{9pt}{14pt}\selectfont \textbf{SlackNet: How to Slack Off Happily via Self-Supervised Learning}}
+%%%%----个人信息设置
+\author[咸鱼]{%
+  \begin{tabular}{ll}%
+    答辩人： & 咸鱼 \tabularnewline%
+    学号：   & 21700000 \tabularnewline%
+    专业：   & 摸鱼技术与工程 \tabularnewline%
+    导师：   & 老咸鱼 \tabularnewline%
+  \end{tabular}
+}
+%%%%----机构信息
+\institute[ZJU]{老和山职业技术学院}
+%%%%----日期信息
+\date[\today]{\today}
+}
+
+\begin{document}
+
+% 标题页
+\begin{frame}
+\titlepage
+\end{frame}
+
+% 提纲页
+\section*{目录}
+\label{sec:toc}
+\begin{comment}
+PPT主要内容不需照着念，略一停留就可进入背景介绍。
+\end{comment}
+\begin{frame}
+  \frametitle{\textbf{目录}}
+  \textbf{\tableofcontents}
+\end{frame}
+% section* 目录 (end)
+
+\section{研究背景}
+\label{sec:background}
+\begin{comment}
+背景介绍尽量简练，2-3页为宜，但信息量要足。
+目的是给出研究背景（对应选题意义）、现状，总结当前工作的不足，从而引出自己的工作。 
+\end{comment}
+\begin{frame}{摸鱼}
+  摸鱼是人类生存的必要条件。
+\end{frame}
+% section 绪论 (end)
+
+\section{研究思路}
+\label{sec:idea}
+\begin{comment}
+全文工作思路，1-2页。理清逻辑，让观众到此明白问题轮廓和自己的工作全貌。
+\end{comment}
+\begin{frame}{思路}
+  摸鱼必不可少。需要学会摸鱼。如何优雅地摸鱼。
+\end{frame}
+% section 研究思路 (end)
+
+\section{研究内容}
+\label{sec:content}
+\begin{comment}
+讲解自己的详细工作要突出思路和重点。
+不一定在语言表达上涉及太多细节，比如，用过多公式讲解他人的工作步骤应避免，属于自己的工作要在视觉和语言上进行标注和区别。实验结果的表示要精炼，让人容易理解。
+对比试验要公平，有说服力，对比对象要新，要有对比意义，从而体现自己的工作价值（这是研究方法和论文写作阶段都有的问题，但是答辩时常被质问）。
+讲解包含可能的额外演示。
+\end{comment}
+\begin{frame}{网络设计}
+端到端的摸鱼神经网络设计。
+\end{frame}
+
+\begin{frame}{实验结果}
+本文提出的方法使得摸鱼效率与准确率提升了50\%。
+\end{frame}
+% section 研究内容 (end)
+
+\section{总结与展望}
+\label{sec:conclusion}
+\begin{comment}
+最后一定要有总结，突出个人工作和结果
+展望和工作的不足之处不宜多，淡化处理。
+致谢可以写，但要简练，并且不要照着读，一句话即可，如：“最后，感谢所有关心和帮助过我的每一个人，感谢各位专家和评委老师”。
+\end{comment}
+\begin{frame}{总结}
+还是摸鱼适合老子。
+\end{frame}
+
+\begin{frame}{展望}
+今后也要做一条快乐摸鱼的咸鱼。
+\end{frame}
+% section 总结与展望 (end)
+
+\end{document}
